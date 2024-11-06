@@ -5,17 +5,27 @@ The Medical Records System is a Java-based application designed for managing and
 
 ## Features
 **Role-Based Access Control:** Three roles with unique access permissions—Admin, Nurse, and Student.
+
 **Medical Record Management:** Allows Nurses to add new treatment entries and view patient history.
+
 **Automated Timestamping:** Date and time are automatically recorded for each entry.
+
 **User Interface (UI):** Built using Java Swing, providing a clean and intuitive design.
+
 **Database Integration:** Uses MySQL to store, retrieve, and update medical records securely.
+
 
 ## Technologies Used
 **Java:** Core application logic and GUI.
+
 **Swing:** For GUI development.
+
 **MySQL:** For database management and storage of medical records.
+
 **JDBC:** To connect Java with MySQL.
+
 **NetBeans:** IDE for development (NetBeans version 23).
+
 
 ## Prerequisites
 **JDK 23.0.1:** Ensure you have JDK 23.0.1 installed.
