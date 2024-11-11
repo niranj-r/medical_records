@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Medical Records System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Login Form -->
+    <main>
+        <section class="login-section">
+            <h1>Login</h1>
+            <form action="redirect-dashboard.html" method="GET" id="login-form">
+                <label for="role">Select Role:</label>
+                <select name="role" id="role" required>
+                    <option value="admin">Admin</option>
+                    <option value="nurse">Nurse</option>
+                    <option value="student">Student</option>
+                </select>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Medical Records System. All rights reserved.</p>
+    </footer>
+
+    <!-- Script to redirect based on the role -->
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+            const role = document.getElementById("role").value;
+            
+            // Redirect to the correct dashboard based on the selected role
+            if (role === "admin") {
+                window.location.href = "admin-dashboard.html";
+            } else if (role === "nurse") {
+                window.location.href = "nurse-dashboard.html";
+            } else if (role === "student") {
+                window.location.href = "student-dashboard.html";
+            }
+        });
+    </script>
+</body>
+</html>
