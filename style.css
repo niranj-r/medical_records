@@ -1,0 +1,86 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f8; /* Adjust as per Figma background */
+    color: #333; /* General text color */
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #3a3f58; /* Inspired by Figma design */
+    color: #ffffff;
+    padding: 1rem 2rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background-color: #e0e5ec; /* Light background inspired by Figma */
+    color: #1e2a38; /* Darker header text */
+}
+
+.hero .cta-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #3a3f58; /* Button color */
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.user-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #e0e5ec; /* Light background */
+    border-radius: 8px;
+}
+
+.user-section h2 {
+    margin-bottom: 1rem;
+}
+
+button {
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.75rem 1.5rem;
+    background-color: #3a3f58; /* Button color */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2d3348; /* Hover color */
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #3a3f58;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
